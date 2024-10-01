@@ -1,64 +1,52 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+# Site settings
+course_name: Data Mining & Machine Learning on Graphs
+course_description: "Graph-structured data is ubiquitous among the world, e.g., social networks like Facebook, e-commerce platforms like Amazon, infrastructures like transportation graph, and chemical graphs like molecules. This course explores the graph analysis and basic machine learning methods for graph-related applications. Topics include: 1) Graph Foundations (basic graph properties and analysis techniques, e.g., centrality and statistical graph models); 2) Computational Methods for Graph-based Tasks (conventional and machine learning methods for link prediction/node classification/graph classification); 3) Real-world Applications (Recommender Systems; Social Anomaly Detection; Drug Discover; Knowledge Graph). Students will complete assigned homework, midterm exam and a team-based course project."
+course_semester: "Fall-2024"
 
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+baseurl: "/fall-2024" # the subpath of your site, e.g. /blog/
+url: "http://ML-Graph.github.io/" # the base hostname & protocol for your site
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
+schoolname: "Department of Computer Science, University of Oregon"
+schoolurl: "https://scds.uoregon.edu/cs"
+twitter_username: username 
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+address: |
+    University of Oregon
+    Department of Computer Science
+    Eugene, Oregon
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# google_analytics: UA-XXXXXXXX-X
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+### Do not change the followings unless you know what you are doing ###
 
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
-        with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+# Build settings
+markdown: kramdown
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+dateformat: "%m/%d/%Y"
+
+future: true
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
