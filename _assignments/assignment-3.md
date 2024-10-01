@@ -7,6 +7,6 @@ solutions: /static_files/assignments/solution-3.pdf
 due: 2024-12-05
 due_event: 
     type: due
-    date: 23:59:00 PST
+    date: 2024-12-05T23:59:00+3:30
     description: 'Assignment 3 due'
 ---
