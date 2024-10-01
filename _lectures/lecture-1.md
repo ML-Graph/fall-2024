@@ -7,4 +7,4 @@ thumbnail: /static_files/presentations/lec.jpg
 links: 
 ---
 **Course Materials:**
-- [Slides](/files/lecture1-syllabus.pdf)
+- [Slides](https://ML-Graph.github.io/fall-2024/files/lectures1-syllabus.pdf)
