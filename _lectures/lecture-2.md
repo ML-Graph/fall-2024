@@ -7,4 +7,4 @@ thumbnail: /static_files/presentations/lec.jpg
 links: 
 ---
 **Course Materials:**
-- [Slides](/static_files/presentations/slides_lec_2.pdf)
+- [Slides](/static_files/presentations/slides/lecture2-background.pdf)
