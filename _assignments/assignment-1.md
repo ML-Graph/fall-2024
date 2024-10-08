@@ -3,7 +3,6 @@ type: assignment
 date: 2024-10-03T4:00:00+4:30
 title: 'Assignment 1'
 pdf: /static_files/assignments/AS1.pdf
-solutions: /static_files/assignments/SOL1.pdf
 due: 2024-10-21
 due_event: 
     type: due
