@@ -7,4 +7,4 @@ thumbnail: /static_files/presentations/lec.jpg
 links: 
 ---
 **Course Materials:**
-- [Slides](/static_files/presentations/slides_lec_3.pdf)
+- [Slides](/static_files/presentations/lecture3-Statistical Graph Model1.pdf)
