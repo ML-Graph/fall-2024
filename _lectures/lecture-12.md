@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-11-07
-title: Machine Learning on Graph <br> Deep Learning Review
+title: Paper Presentation <br> Machine Learning on Graph <br> Deep Learning Review
 tldr: "Short text to describe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg
 links: 
