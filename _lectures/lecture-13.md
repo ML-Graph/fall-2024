@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-11-12
-title: Paper Presentation <br> Machine Learning on Graph <br> Network Embedding
+title: Paper Presentation <br> Community Detection
 tldr: "Short text to describe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg
 links: 
