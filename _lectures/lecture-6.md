@@ -1,10 +1,10 @@
 ---
 type: lecture
-date: 2024-10-24
-title: Video <br> Network Analysis <br> Network Centrality <br> Eigenvector, PageRank
+date: 2024-10-17
+title: Computational Method <br> Node Classification-2
 tldr: "Short text to describe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg
 links: 
 ---
 **Course Materials:**
-- [Slides](/static_files/presentations/slides_lec_6.pdf)
+- [Slides](https://ml-graph.github.io/fall-2024/static_files/presentations/slides/lecture6-NC2.pdf)
