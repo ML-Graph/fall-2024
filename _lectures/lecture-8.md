@@ -7,4 +7,4 @@ thumbnail: /static_files/presentations/lec.jpg
 links: 
 ---
 **Course Materials:**
-- [Slides](https://ml-graph.github.io/fall-2024/static_files/presentations/slides/lecture8-Centrality2.pdf)
+- [Slides](https://ml-graph.github.io/fall-2024/static_files/presentations/slides/lecture8 - Network Property 2.pdf)
